@@ -1,0 +1,87 @@
+//  ===================================================================
+//  MACROS
+//  ===================================================================
+
+macro Create_Slider(#slider_name#, #slider_ID#, #min_value#, #max_value#, #default_value#, #slider_pos_X#, #slider_pos_Y#, #picture#, #slider_edit_width#, #slider_edit_height#, #mouse_behaviour#)
+  declare ui_slider #slider_name#(#min_value#, #max_value#) 
+  declare #slider_ID#
+
+  #slider_ID# := get_ui_id(#slider_name#)
+
+  make_persistent(#slider_name#)
+  read_persistent_var(#slider_name#)
+  
+  // slider UI
+  set_control_par_str(#slider_ID#, $CONTROL_PAR_PICTURE,      #picture#)
+  set_control_par(  #slider_ID#, $CONTROL_PAR_POS_X,      #slider_pos_X#)
+  set_control_par(  #slider_ID#, $CONTROL_PAR_POS_Y,      #slider_pos_Y#)
+  set_control_par(  #slider_ID#, $CONTROL_PAR_DEFAULT_VALUE,  #default_value#)
+  set_control_par(  #slider_ID#, $CONTROL_PAR_WIDTH,      #slider_edit_width#)
+  set_control_par(  #slider_ID#, $CONTROL_PAR_HEIGHT,       #slider_edit_height#)
+  set_control_par(  #slider_ID#, $CONTROL_PAR_MOUSE_BEHAVIOUR,  #mouse_behaviour#)  // -5000 to 5000.
+                                                                                    // -5000 is vertical mouse movement, 5000 is horizontal mouse movement.   
+                                                                                    // -5000 is most sensitive vertical, -1 is least sensitive vertical.
+                                                                                    // 1 is least sensitive horizontal, 5000 is most sensitive horizontal.
+end macro
+
+
+macro Create_Label(#label_name#, #label_ID#, #label_width#, #label_height#, #label_text_alignment#, #label_pos_X#, #label_pos_Y#)
+  declare ui_label #label_name# (#label_width#, #label_height#)
+  declare #label_ID#
+
+  #label_ID# := get_ui_id(#label_name#)
+
+  set_control_par(#label_ID#, $CONTROL_PAR_TEXT_ALIGNMENT, #label_text_alignment#)
+  set_control_par(#label_ID#, $CONTROL_PAR_POS_X, #label_pos_X#)
+  set_control_par(#label_ID#, $CONTROL_PAR_POS_Y, #label_pos_Y#)
+end macro
+
+
+macro Create_Switch(#switch_name#, #switch_ID#, #switch_edit_width#, #switch_edit_height#, #switch_text_alignment#, #switch_pos_X#, #switch_pos_Y#)
+  declare ui_switch #switch_name#
+  declare #switch_ID#
+
+  #switch_ID# := get_ui_id(#switch_name#)
+
+    set_control_par(#switch_ID#, $CONTROL_PAR_WIDTH, #switch_edit_width#)
+    set_control_par(#switch_ID#, $CONTROL_PAR_HEIGHT, #switch_edit_height#)
+    set_control_par(#switch_ID#, $CONTROL_PAR_TEXT_ALIGNMENT, #switch_text_alignment#)
+    set_control_par(#switch_ID#, $CONTROL_PAR_POS_X, #switch_pos_X#)
+    set_control_par(#switch_ID#, $CONTROL_PAR_POS_Y, #switch_pos_Y#)
+end macro
+
+
+// applies set_engine_par() on every group in a given slot
+macro Create_Group_FX(#parameter#, #value#, #slot#)
+  $group := 0
+  while ($group < $NUM_GROUPS)
+      set_engine_par(#parameter#, #value#, $group, #slot#, -1)
+      inc($group)
+  end while
+end macro
+
+
+// applies set_engine_par() on every group in a given slot
+macro Create_Group_Filter(#type#, #subtype#, #slot#)
+  $group := 0
+  while ($group < $NUM_GROUPS)
+      set_engine_par($ENGINE_PAR_EFFECT_TYPE,     #type#,     $group, #slot#, -1)
+      set_engine_par($ENGINE_PAR_EFFECT_SUBTYPE,  #subtype#,  $group, #slot#, -1)
+      inc($group)
+  end while
+end macro
+
+
+//  ===================================================================
+//  FUNCTIONS
+//  ===================================================================
+
+// function Change_Switch_Text(switch, text_on, text_off)
+//   if (switch = 1)   // if switch is on
+//     set_text(Filter_Mode_Switch, text_on)
+//   else        // if switch is off (default)
+//     set_text(Filter_Mode_Switch, text_off)
+//   end if
+// end function
+
+

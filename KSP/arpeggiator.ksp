@@ -1,0 +1,16 @@
+// Nils arpeggiator: https://www.nilsliberg.se/ksp/scripts/tutorial/
+
+on init
+  declare %notes[8] := (0, 4, 7, 4, 12, 4, 7, 4)
+  declare $i
+end on
+
+on note
+  ignore_event($EVENT_ID)         
+  $i := 0                         { assign the value 0 to $i }  
+  while ($i < 8)                  { repeat while $i is less than 8 }
+    play_note($EVENT_NOTE + %notes[$i], $EVENT_VELOCITY, 0, 100000)
+    wait(100000)   
+    inc($i)                       { increment $i by one }  
+  end while
+end on

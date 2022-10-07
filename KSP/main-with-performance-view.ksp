@@ -1,0 +1,3 @@
+on init
+	load_performance_view('tagel-legato.nckp')
+end on

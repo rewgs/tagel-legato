@@ -1,0 +1,10 @@
+{ Compiled on Thu Oct  6 17:36:00 2022 }
+on init
+  declare $concat_it
+  declare $concat_offset
+  declare $string_it
+  declare $list_it
+  declare $preproc_i
+  load_performance_view("tagel-legato.nckp")
+end on
+

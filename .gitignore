@@ -3,6 +3,7 @@
 
 # Excluding only the image files; the .txt files need to be here.
 /Resources/pictures/*.png
+/Resources/pictures/*.jpg
 
 # Obviously.
 /Samples/

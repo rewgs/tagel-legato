@@ -15,6 +15,7 @@ Your directory structure should look like this:
 │   ├── performance_view
 │   │   └── tagel-legato.nckp
 │   ├── pictures
+│   │   └── Jouhikko Tiny.png
 │   └── scripts
 │       └── main.txt
 ├── Resources.nkc
@@ -22,3 +23,4 @@ Your directory structure should look like this:
 └── Samples -> [your samples folder]
 
 **Samples are not being pushed to this repo.** Be sure to create a symbolic link pointing to wherever they live on your machine, and be sure to name the link Samples, as shown above.
+**Resources/pictures also is not being pushed to this repo.** Make sure to manually add or symlink to any picture files.

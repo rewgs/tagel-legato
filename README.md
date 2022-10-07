@@ -6,9 +6,9 @@ A little tutorial on markdown. It's kind of like HTML. For example, it uses
 <!-- Just like HTML, it works for one line or multiple. -->
 
 <!-- 
-From here down is a header. Note that has before the sentence -- that means it's
-  the biggest header, Header 1, or H1. One has is essentially like <h1></h1>. 
-  Two hashes is H2, one step smaller, on down to Header 6.
+From here down is a header. Note the three hashes before the sentence -- that 
+means it's the third biggest header, Header 3, or H3, or in HTML, <h3></h3>. 
+One hash is H1, the biggest, and six hashes is H6, the smallest.
 
 This is a great super quick tutorial on markdown:
 https://www.markdowntutorial.com
@@ -18,7 +18,7 @@ https://www.markdowntutorial.com
 ### Your directory structure should look like this:  
 
 ```bash
-(this directory, tagel-legato)  
+(this repo, tagel-legato)  
 ├── Data  
 ├── Instruments  
 │   ├── Tagel Legato.nki  

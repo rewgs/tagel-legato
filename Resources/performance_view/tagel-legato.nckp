@@ -10,10 +10,48 @@
                 "color": 2631720,
                 "image": ""
             },
-            "controls": null,
+            "controls": [
+                {
+                    "index": 7,
+                    "value": {
+                        "automation": {
+                            "disableUserAssign": false,
+                            "hostAutomation": {
+                                "id": 0,
+                                "on": false
+                            },
+                            "name": ""
+                        },
+                        "common": {
+                            "id": "slider",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 0,
+                                "width": 0
+                            },
+                            "zLayer": 1
+                        },
+                        "image": "",
+                        "mouse": {
+                            "orientation": 1,
+                            "scale": 1500
+                        },
+                        "value": {
+                            "default": 0,
+                            "max": 100,
+                            "min": 0
+                        }
+                    }
+                }
+            ],
             "icon": {
-                "image": "",
-                "show": false
+                "image": "Jouhikko Tiny",
+                "show": true
             },
             "size": {
                 "height": 200,

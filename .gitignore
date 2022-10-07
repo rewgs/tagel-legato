@@ -1,3 +1,8 @@
+# Because fuck these.
 .DS_STORE
-/Resources/pictures/
+
+# Excluding only the image files; the .txt files need to be here.
+/Resources/pictures/*.png
+
+# Obviously.
 /Samples/

@@ -18,7 +18,7 @@
                             "disableUserAssign": false,
                             "hostAutomation": {
                                 "id": 0,
-                                "on": false
+                                "on": true
                             },
                             "name": ""
                         },
@@ -38,7 +38,7 @@
                         },
                         "image": "",
                         "mouse": {
-                            "orientation": 1,
+                            "orientation": 0,
                             "scale": 1500
                         },
                         "value": {

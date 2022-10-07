@@ -15,8 +15,9 @@ https://www.markdowntutorial.com
 -->
 
 
-# Your directory structure should look like this:  
-  
+### Your directory structure should look like this:  
+
+```bash
 (this directory, tagel-legato)  
 ├── Data  
 ├── Instruments  
@@ -38,6 +39,7 @@ https://www.markdowntutorial.com
 ├── Resources.nkc  
 ├── Resources.nkr  
 └── Samples -> [your samples folder]  
-  
+ ``` 
+
 **Samples are not being pushed to this repo.** Be sure to create a symbolic link pointing to wherever they live on your machine, and be sure to name the link Samples, as shown above.  
 **Resources/pictures also is not being pushed to this repo.** Make sure to manually add or symlink to any picture files.  

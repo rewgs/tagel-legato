@@ -42,4 +42,5 @@ https://www.markdowntutorial.com
  ``` 
 
 **Samples are not being pushed to this repo.** Be sure to create a symbolic link pointing to wherever they live on your machine, and be sure to name the link Samples, as shown above.  
+
 **Resources/pictures also is not being pushed to this repo.** Make sure to manually add or symlink to any picture files.  

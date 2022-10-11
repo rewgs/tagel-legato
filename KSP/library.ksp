@@ -2,6 +2,7 @@
 //  MACROS
 //  ===================================================================
 
+// JH made a change
 macro Create_Slider(#slider_name#, #slider_ID#, #min_value#, #max_value#, #default_value#, #slider_pos_X#, #slider_pos_Y#, #picture#, #slider_edit_width#, #slider_edit_height#, #mouse_behaviour#)
   declare ui_slider #slider_name#(#min_value#, #max_value#) 
   declare #slider_ID#

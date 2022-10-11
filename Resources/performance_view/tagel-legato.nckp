@@ -12,6 +12,26 @@
             },
             "controls": [
                 {
+                    "index": 0,
+                    "value": {
+                        "common": {
+                            "id": "panel",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 0,
+                                "width": 0
+                            },
+                            "zLayer": 1
+                        },
+                        "controls": null
+                    }
+                },
+                {
                     "index": 7,
                     "value": {
                         "automation": {
@@ -26,8 +46,8 @@
                             "id": "slider",
                             "infoPaneText": "",
                             "position": {
-                                "x": 0,
-                                "y": 0
+                                "x": 40,
+                                "y": 290
                             },
                             "show": true,
                             "size": {
@@ -36,7 +56,7 @@
                             },
                             "zLayer": 1
                         },
-                        "image": "",
+                        "image": "Jupiter_8_Slider_Rev_4",
                         "mouse": {
                             "orientation": 0,
                             "scale": 1500
@@ -54,8 +74,8 @@
                 "show": true
             },
             "size": {
-                "height": 200,
-                "width": 633
+                "height": 450,
+                "width": 1000
             }
         }
     }

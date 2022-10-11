@@ -5,7 +5,7 @@
 	// 	Compiled with SublimeKSP; result copied to main.txt.
 	// 	Kontakt instrument is set to read main.txt from the Resources folder.
 
-import "Library.ksp"
+import "library.ksp"
 
 on init
 

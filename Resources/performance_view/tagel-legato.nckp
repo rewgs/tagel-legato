@@ -12,14 +12,22 @@
             },
             "controls": [
                 {
-                    "index": 0,
+                    "index": 7,
                     "value": {
+                        "automation": {
+                            "disableUserAssign": false,
+                            "hostAutomation": {
+                                "id": 0,
+                                "on": false
+                            },
+                            "name": ""
+                        },
                         "common": {
-                            "id": "panel",
+                            "id": "sldr_mic_medium",
                             "infoPaneText": "",
                             "position": {
-                                "x": 0,
-                                "y": 0
+                                "x": 100,
+                                "y": 320
                             },
                             "show": true,
                             "size": {
@@ -28,7 +36,172 @@
                             },
                             "zLayer": 1
                         },
-                        "controls": null
+                        "image": "Jupiter_8_Slider_Rev_4",
+                        "mouse": {
+                            "orientation": 0,
+                            "scale": 1500
+                        },
+                        "value": {
+                            "default": 0,
+                            "max": 100,
+                            "min": 0
+                        }
+                    }
+                },
+                {
+                    "index": 1,
+                    "value": {
+                        "common": {
+                            "id": "bttn_mic_far",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 150,
+                                "y": 432
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 20,
+                                "width": 45
+                            },
+                            "zLayer": 1
+                        },
+                        "image": "",
+                        "text": {
+                            "fonts": {
+                                "hoverOff": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "hoverOn": {
+                                    "custom": "",
+                                    "type": 20
+                                },
+                                "off": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "on": {
+                                    "custom": "",
+                                    "type": 20
+                                },
+                                "pressedOff": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "pressedOn": {
+                                    "custom": "",
+                                    "type": 20
+                                }
+                            },
+                            "horizontalAlignment": 1,
+                            "positionY": 2,
+                            "shiftOnPress": true,
+                            "string": "F"
+                        }
+                    }
+                },
+                {
+                    "index": 1,
+                    "value": {
+                        "common": {
+                            "id": "bttn_mic_medium",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 100,
+                                "y": 432
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 20,
+                                "width": 45
+                            },
+                            "zLayer": 1
+                        },
+                        "image": "",
+                        "text": {
+                            "fonts": {
+                                "hoverOff": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "hoverOn": {
+                                    "custom": "",
+                                    "type": 20
+                                },
+                                "off": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "on": {
+                                    "custom": "",
+                                    "type": 20
+                                },
+                                "pressedOff": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "pressedOn": {
+                                    "custom": "",
+                                    "type": 20
+                                }
+                            },
+                            "horizontalAlignment": 1,
+                            "positionY": 2,
+                            "shiftOnPress": true,
+                            "string": "M"
+                        }
+                    }
+                },
+                {
+                    "index": 1,
+                    "value": {
+                        "common": {
+                            "id": "bttn_mic_close",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 50,
+                                "y": 432
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 20,
+                                "width": 45
+                            },
+                            "zLayer": 1
+                        },
+                        "image": "",
+                        "text": {
+                            "fonts": {
+                                "hoverOff": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "hoverOn": {
+                                    "custom": "",
+                                    "type": 20
+                                },
+                                "off": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "on": {
+                                    "custom": "",
+                                    "type": 20
+                                },
+                                "pressedOff": {
+                                    "custom": "",
+                                    "type": 2
+                                },
+                                "pressedOn": {
+                                    "custom": "",
+                                    "type": 20
+                                }
+                            },
+                            "horizontalAlignment": 1,
+                            "positionY": 2,
+                            "shiftOnPress": true,
+                            "string": "C"
+                        }
                     }
                 },
                 {
@@ -38,16 +211,53 @@
                             "disableUserAssign": false,
                             "hostAutomation": {
                                 "id": 0,
-                                "on": true
+                                "on": false
                             },
                             "name": ""
                         },
                         "common": {
-                            "id": "slider",
+                            "id": "sldr_mic_far",
                             "infoPaneText": "",
                             "position": {
-                                "x": 40,
-                                "y": 290
+                                "x": 150,
+                                "y": 320
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 0,
+                                "width": 0
+                            },
+                            "zLayer": 1
+                        },
+                        "image": "Jupiter_8_Slider_Rev_4",
+                        "mouse": {
+                            "orientation": 0,
+                            "scale": 1500
+                        },
+                        "value": {
+                            "default": 0,
+                            "max": 100,
+                            "min": 0
+                        }
+                    }
+                },
+                {
+                    "index": 7,
+                    "value": {
+                        "automation": {
+                            "disableUserAssign": false,
+                            "hostAutomation": {
+                                "id": 0,
+                                "on": false
+                            },
+                            "name": ""
+                        },
+                        "common": {
+                            "id": "sldr_mic_close",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 50,
+                                "y": 320
                             },
                             "show": true,
                             "size": {
@@ -74,7 +284,7 @@
                 "show": true
             },
             "size": {
-                "height": 450,
+                "height": 500,
                 "width": 1000
             }
         }

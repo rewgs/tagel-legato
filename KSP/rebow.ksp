@@ -1,0 +1,29 @@
+/*
+Okay! Rebowing!
+
+Basic idea is that rebowing should happen in a single, long file.
+Set each rebow moment as a "marker" that the playhead can jump to.
+Jump to it whenever the user wants.
+Release time (or maybe sample?) covers up the transition.
+
+A few ways to achieve this:
+-A trigger of some sort -- for example, the lowest A and B keys on a keyboard could both trigger a new rebow (having two is helpful for fast rebows)
+-Simply replaying the same note. This is how CSS does it. Problem with this is that there could be a gap between when the user lets go of note 1
+and triggers bow 2. 
+	-Could hold sustain pedal to temporarily make the release time longer, and thus help cover up the gap?
+	-Re-triggering the same note with the sustain pedal held down *should* feel just like the A/B key idea above.
+
+
+
+-Before anything else, I need to be able to make markers in waveform at rebows.
+	-Q: Can Kontakt automatically detect transients?
+	-A: Yes, but that probalby isn't what we want...in reality, rebows aren't always transients.
+	1. Enable Grid
+	2. Use +/- buttons to right (above lock button) to add/remove markers.
+		or just right-click above wave/below numbers
+	PROBLEM: this fucking sucks. Is it possible to embed markers in the waveform? Or export each bowing as its own wav, and then make a Wwise-ish playlist of them in sequence?
+-Ability to skip the playhead to a marker.
+	...apparently not
+-Ability to trigger the skip-ahead.
+	...apparently not
+*/

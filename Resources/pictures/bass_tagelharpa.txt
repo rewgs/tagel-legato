@@ -1,0 +1,9 @@
+Has Alpha Channel: yes
+Number of Animations: [FILL THIS IN]
+Horizontal Animations: no
+Vertical Resiable: no
+Horizontal Resiable: no
+Fixed Top: 0
+Fixed Bottom: 0
+Fixed Left: 0
+Fixed Right: 0

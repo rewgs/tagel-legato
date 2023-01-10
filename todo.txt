@@ -1,5 +1,0 @@
-1. Install WSL2 on your PC.
-2. Install Windows Terminal.
-3. Install git: sudo apt install build-essential
-4. Make a development directory inside of the AJA directory on your computer.
-5. Run git clone repo-url and it'll clone to that folder.

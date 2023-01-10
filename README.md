@@ -31,7 +31,7 @@
 ### Inspiration
 - Westwood Instruments: Look at how you can "lock" a group (they call them "improv a," "improv b")
 
-# How to set up this repo locally.
+# How to set up this repo locally
 
 <!--
 First, a little tutorial on markdown. It's kind of like HTML. For example, it 
